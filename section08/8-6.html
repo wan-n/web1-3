@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .scrollbox1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            overflow: scroll;   /*가로 세로 스크롤바 모두 표시*/
+        }
+        .scrollbox2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+            overflow-x: scroll; /*가로 스크롤바 표시*/
+            overflow-y: hidden; /*세로 스크롤바 숨김*/
+        }
+        .scrollbox3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollbox1">
+        <h4>SCROLL-X,Y</h4>
+        <p><img src="../section04/img/camera01.jpg" alt="camera"></p>
+    </div>
+    <div class="scrollbox2">
+        <h4>SCROLL-X</h4>
+        <p><img src="../section04/img/camera02.jpg" alt="camera"></p>
+    </div>
+    <div class="scrollbox3">
+        <h4>SCROLL-Y</h4>
+        <p><img src="../section04/img/camera03.jpg" alt="camera"></p>
+    </div>
+</body>
+</html>

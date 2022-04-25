@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contents1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        .contents2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+        .contents3{
+            width: 200px;
+            /*영역을 벗어나는 부분이 보이지않게 하는 속성,
+             하지만 height를 지정해주지 않았기 때문에 블록속성에 따라 사이즈가 자동 조절된다.*/
+            overflow: hidden;  
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+        .contents4{
+            width: 200px;
+            height: 200px;
+            overflow: hidden; /*height 크기가 지정되어 있으므로 영역을 벗어나면 보이지 않는다. */
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents1">
+        <h4>콘텐츠의 양이 일정</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown </p>
+    </div>
+    <div class="contents2">
+        <h4>콘텐츠의 양이 많거나 유동적일 때 흘러 넘침</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+               remaining essentially unchanged.</p>
+    </div>
+    <div class="contents3">
+        <h4>콘텐츠의 양에 따라서 높이가 늘어남</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+               remaining essentially unchanged.</p>
+    </div>
+    <div class="contents4">
+        <h4>박스의 지정된 높이만큼만 콘텐츠가 보임</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+               remaining essentially unchanged.</p>
+    </div>
+</body>
+</html>
