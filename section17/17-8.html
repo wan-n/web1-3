@@ -17,11 +17,13 @@
             text-decoration: none;
         }
         .nav{
-            width: 200px;
+            width: 1000px;
             overflow: hidden;
             position: relative;
         }
         .nav li{
+            float: left;
+            width: 200px;
             font-size: 14px;
             background-color: #000000;
             text-align: center;
@@ -31,7 +33,7 @@
             line-height: 40px;
             box-sizing: border-box;
             color: white;
-            cursor: pointer;
+            cursor: pointer;  /*li 영역 위에 커서를 올리면 커서 모양이 바뀐다.*/
         }
         .submenu li{
             font-size: 12px;
@@ -53,6 +55,9 @@
         }
         .submenu li:hover{
             background-color: burlywood;
+            /* color: yellow;   black의 중요도 가 더 높아 무시됨*/
+        }
+        .submenu li:hover a{
             color: yellow;
         }
     </style>
