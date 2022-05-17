@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            color: white;
+            font-weight: 900;
+        }
+        @media screen and (max-width:767px){
+            html{
+                background-color: red;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:959px){
+            html{
+                background-color: green;
+            }
+        }
+        @media screen and (min-width:960px) {
+            html{
+                background-color: blue;
+            }
+        }
+
+        /* 아래에 작성할수록 우선순위가 높으므로 이처럼 작성할 수도 있다.
+        html{
+            color: white;
+            font-weight: 900;
+            background-color: red;
+        }
+        @media screen and (min-width:768px){
+            html{
+                background-color: green;
+            }
+        }
+        @media screen and (min-width:960px) {
+            html{
+                background-color: blue;
+            }
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+</body>
+</html>

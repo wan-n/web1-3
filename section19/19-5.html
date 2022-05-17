@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        header{
+            width: 100%;
+            height: 46px;
+            background-image: url(img/header_background.png);
+            background-repeat: repeat-x;
+            position: relative;
+            overflow: hidden;
+        }
+        .logo{
+            width: 100px;
+            height: 32px;
+            line-height: 32px;
+            margin: 7px auto;
+            overflow: hidden;
+            text-align: center;
+            font-family: 'tahoma', sans-serif;
+            color: white;
+        }
+        .left{
+            position: absolute;
+            top: 7px;
+            left: 10px;
+            width: 62px;
+            height: 32px;
+            display: block;
+            font-size: 0;
+            background-image: url(img/sprites.png);
+        }
+        .right{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            right: 10px;
+            top: 7px;
+            display: block;
+            font-size: 0;
+            background-image: url(img/sprites.png);
+            background-position: -62px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="left">left</a>
+        <h1 class="logo">LOGO</h1>
+        <a href="#" class="right">right</a>
+    </header>
+</body>
+</html>
