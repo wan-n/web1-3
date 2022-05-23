@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
@@ -12,10 +14,31 @@
         <nav>
             <ul>
                 <li><a href="#">피드백</a></li>
-                <li>한국어  <!--드롭다운 처리 필요-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
-                      </svg>
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="dp_menu()">한국어
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content" id="drop-content">
+                        <a href="#">Dansk</a>
+                        <a href="#">Deutsch</a>
+                        <a href="#">English (US)</a>
+                        <a href="#">Español</a>
+                        <a href="#">Français</a>
+                        <a href="#">हिन्दी (भारत)</a>
+                        <a href="#">Italiano</a>
+                        <a href="#">日本語</a>
+                        <a href="#">Nederlands</a>
+                        <a href="#">Polski</a>
+                        <a href="#">Português do Brasil</a>
+                        <a href="#">Русский</a>
+                        <a href="#">svenska</a>
+                        <a href="#">ไทย</a>
+                        <a href="#">Türkçe</a>
+                        <a href="#">Tiếng Việt</a>
+                        <a href="#">繁體中文</a>
+                    </div>
                 </li>
                 <li><a href="#">문의 등록</a></li>
             </ul>
@@ -48,70 +71,60 @@
             <ul>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>공지 사항</p>
                         <p>들어보세요. 무언가 심상치 않은 일이 벌어지고 있습니다.</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>Discord 인터페이스</p>
                         <p>이 버튼은 무엇인가요?!</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>계정 설정</p>
                         <p>당신도 당신의 계정도 특별한 눈송이입니다.</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>시작하기</p>
                         <p>첫 단추를 제대로 끼워야 합니다!</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>서버 설정</p>
                         <p>실내 장식 만큼 재미있는 것.</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>커뮤니티 프로그램</p>
                         <p>HypeSquaders를 위한 광고, 파트너를 위한 파티</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>Nitro</p>
                         <p>쓰러질 때까지 쇼핑하시면 안 돼요! 저희가 도와드릴게요.</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>청구서</p>
                         <p>은행 계좌 잔액을 보는 기분.</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>신뢰 & 보안</p>
                         <p>안전하고 건전하게</p>
                     </a>
                 </li>
                 <li class="items">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>자주 묻는 질문</p>
                         <p>스스로 해결해 보아요.</p>
                     </a>
@@ -123,14 +136,12 @@
             <ul>
                 <li class="others-item">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>신뢰 & 보안</p>
                         <p>안전하고 건전하게</p>
                     </a>
                 </li>
                 <li class="others-item">
                     <a href="#">
-                        <figure><object data="" type=""></object></figure>
                         <p>자주 묻는 질문</p>
                         <p>스스로 해결해 보아요.</p>
                     </a>
@@ -139,12 +150,18 @@
         </section>
     </main>
     <footer>
-        <div class="learn-more"><a href="#">자세히</a></div>
         <div class="download">
-            <!-- 이미지 배치 - ???? -->
+            <div class="learn-more"><a href="#">자세히</a></div>
+            <div class="apps">
+                <a href="#"><figure><object data="img/browser.svg" type="image/svg+xml"></object></figure></a>
+                <a href="#"><figure><object data="img/android.svg" type="image/svg+xml"></object></figure></a>
+                <a href="#"><figure><object data="img/ios.svg" type="image/svg+xml"></object></figure></a>
+                <a href="#"><figure><object data="img/windows.svg" type="image/svg+xml"></object></figure></a>
+                <a href="#"><figure><object data="img/linux.svg" type="image/svg+xml"></object></figure></a>
+            </div>
         </div>
         <div class="footer-nav">
-            <figure><a href="#"><object data="" type=""></object></a></figure>
+            <figure><a href="#"><object data="img/footer-logo.svg" type="image/svg+xml"></object></a></figure>
             <div class="nav-links">
                 <ul>
                     <li>다운로드</li>
@@ -167,5 +184,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
