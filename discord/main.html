@@ -8,18 +8,18 @@
 </head>
 <body>
     <header>
-        <figure id="main-logo"><a href="main.html"><object data="img/discord-main.svg" type=""></object></a></figure>
+        <figure id="main-logo"><a href="main.html"><object data="img/discord-main.svg" type="image/svg+xml"></object></a></figure>
         <nav>
             <ul>
-                <li>피드백</li>
+                <li><a href="#">피드백</a></li>
                 <li>한국어  <!--드롭다운 처리 필요-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
                       </svg>
                 </li>
-                <li>문의 등록</li>
-                <li>로그인</li>
+                <li><a href="#">문의 등록</a></li>
             </ul>
+            <a href="#">로그인</a>
         </nav>
     </header>
     <main>
@@ -27,7 +27,15 @@
             <div class="main-search">
                 <h1>고객 지원 센터</h1>
                 <form action="" method="get">
-                    <input type="search">
+                    <div class="search-container">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
+                                <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+                                <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+                              </svg>
+                        </figure>
+                        <input type="search" placeholder="검색">
+                    </div>
                 </form>
             </div>
         </section>
