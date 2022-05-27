@@ -77,7 +77,7 @@ nav ul, nav li, .login{
     display: inline-block;
 }
 nav li{
-    padding: 0 30px 0 0;
+    margin: 0 30px 0 0;
 }
 nav a{
     color: var(--font-color-blue);
@@ -85,6 +85,29 @@ nav a{
 }
 nav a:hover{
     text-decoration: underline;
+}
+.hamburger{
+    margin: 0 30px 0 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    display: none;
+    width: 13px;
+}
+.hamburger svg{
+    width: 13px;
+    height: 13px;
+    color: var(--background-blue);
+    
+}
+
+@media screen and (max-width: 550px) {
+    header nav ul{
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+    }
 }
 
 
