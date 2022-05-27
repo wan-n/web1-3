@@ -305,10 +305,10 @@ footer{
     line-height: 42px;
     color: var(--font-color-white);
     font-weight: 800;
+    transition: box-shadow 0.2s;
 }
 .learn-more a:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    transition: box-shadow 0.2s;
 }
 .apps-background{
     width: 814px;
@@ -323,10 +323,10 @@ footer{
 }
 .apps a{
     opacity: 0.5;
+    transition: opacity 0.2s;
 }
 .apps a:hover, .nav-links a:hover{
     opacity: 1;
-    transition: opacity 0.2s;
 }
 .browser{
     margin-left: 90px;
@@ -368,6 +368,7 @@ footer{
     line-height: 2;
     color: var(--font-color-white);
     opacity: 0.3;
+    transition: opacity 0.2s;
 }
 .highlight{
     color: var(--footer-green);
