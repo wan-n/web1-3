@@ -1,0 +1,119 @@
+.google-play {
+	background: url('img/spr_intro.png') no-repeat 0 0;
+	width: 160px;
+	height: 47px;
+}
+
+.app-store {
+	background: url('img/spr_intro.png') no-repeat 0 -49px;
+	width: 160px;
+	height: 47px;
+}
+
+.band-logo {
+	background: url('img/spr_intro.png') no-repeat 0 -98px;
+	width: 78px;
+	height: 29px;
+}
+
+.band-app-logo {
+	background: url('img/spr_intro.png') no-repeat -162px 0;
+	width: 70px;
+	height: 70px;
+}
+
+.twitter {
+	background: url('img/spr_intro.png') no-repeat -81px -101px;
+	width: 22px;
+	height: 17px;
+}
+
+.youtube {
+	background: url('img/spr_intro.png') no-repeat -106px -101px;
+	width: 24px;
+	height: 17px;
+}
+
+.check-green {
+	background: url('img/spr_intro.png') no-repeat -132px -98px;
+	width: 24px;
+	height: 24px;
+}
+
+.check-white {
+	background: url('img/spr_intro.png') no-repeat -158px -98px;
+	width: 24px;
+	height: 24px;
+}
+
+.naver {
+	background: url('img/spr_intro.png') no-repeat -186px -100px;
+	width: 19px;
+	height: 18px;
+}
+
+.facebook-white {
+	background: url('img/spr_intro.png') no-repeat -169px -74px;
+	width: 9px;
+	height: 19px;
+}
+
+.instagram {
+	background: url('img/spr_intro.png') no-repeat -190px -73px;
+	width: 21px;
+	height: 21px;
+}
+
+.right-white {
+	background: url('img/spr_intro.png') no-repeat -219px -73px;
+	width: 8px;
+	height: 14px;
+}
+
+.right-gray {
+	background: url('img/spr_intro.png') no-repeat -209px -98px;
+	width: 22px;
+	height: 22px;
+}
+
+.facebook-blue {
+	background: url('img/spr_intro.png') no-repeat -3px -131px;
+	width: 17px;
+	height: 18px;
+}
+
+.google {
+	background: url('img/spr_intro.png') no-repeat -26px -131px;
+	width: 18px;
+	height: 18px;
+}
+
+.line {
+	background: url('img/spr_intro.png') no-repeat -49px -130px;
+	width: 21px;
+	height: 21px;
+}
+
+.invisible {
+	background: url('img/spr_intro.png') no-repeat -74px -130px;
+	width: 16px;
+	height: 16px;
+}
+
+.visible {
+	background: url('img/spr_intro.png') no-repeat -96px -133px;
+	width: 16px;
+	height: 10px;
+}
+
+.top-mini {
+	background: url('img/spr_intro.png') no-repeat -214px -90px;
+	width: 10px;
+	height: 6px;
+}
+
+.right-mini {
+	background: url('img/spr_intro.png') no-repeat -116px -129px;
+	width: 6px;
+	height: 10px;
+}
