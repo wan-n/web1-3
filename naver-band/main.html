@@ -10,55 +10,56 @@
 </head>
 <body>
     <header>
-        <div class="h-wrapper">
-            <h1><a href="#"><span class="hidden">BAND</span></a></h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" id="dropbtn" class="nav-contents" onclick="dp_menu()">한국어</a>
-                            <div class="dropdown-content">
-                                <a href="#">English</a>
-                                <a href="#">한국어</a>
-                                <a href="#">日本語</a>
-                                <a href="#">Español</a>
-                                <a href="#">繁體中文</a>
-                                <a href="#">Bahasa Indonesia</a>
-                            </div>
-                    </li>
-                    <li><a href="#" class="nav-contents">회원가입</a></li>
-                    <li><a href="#" class="login">로그인</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1><a href="#"><span class="hidden">BAND</span></a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="dropbtn" class="nav-contents" onclick="dp_menu()">한국어</a>
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <a href="#">한국어</a>
+                            <a href="#">日本語</a>
+                            <a href="#">Español</a>
+                            <a href="#">繁體中文</a>
+                            <a href="#">Bahasa Indonesia</a>
+                        </div>
+                </li>
+                <li><a href="#" class="nav-contents">회원가입</a></li>
+                <li><a href="#" class="h-login">로그인</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="slogan">
+        <section id="slogan">
             <div class="slogan-img"></div>
             <div class="signup">
                 <h2>모임이 쉬워진다! <br>우리끼리 밴드</h2>
-                <p>당신의 모임도 BAND로 시작하세요.</p>
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
-                <p>내게 맞는 밴드를 만나려면 <a href="#">밴드 찾기</a></p>
-                <p>모임별 밴드 활용법 <a href="#">밴드 가이드 보기</a></p>
+                <p class="explanation">당신의 모임도 BAND로 시작하세요.</p>
+                <a href="#" id="main-login" class="register">로그인</a>
+                <a href="#" id="main-signin" class="register">회원가입</a>
+                <p class="tip">내게 맞는 밴드를 만나려면 <a href="#" class="tip-anchor">밴드 찾기</a></p>
+                <p class="tip">모임별 밴드 활용법 <a href="#" class="tip-anchor">밴드 가이드 보기</a></p>
             </div>
         </section>
-        <section>
-            <div>
+        <section id="introduction">
+            <div class="intro-img">
                 <h3>모임을 위한 공간, 밴드</h3>
                 <p>밴드는 그룹 멤버와 함께 하는 공간입니다.<br>동호회, 스터디, 주제별 모임을 밴드로 시작하세요.</p>
             </div>
-            <ul>
+            <ul class="intro-list">
                 <li>
-                    <p>어떤 모임이라도!</p>
+                    <div id="list-img1" class="intro-list-img"></div>
+                    <strong>어떤 모임이라도!</strong>
                     <p>친구, 가족, 동료 등 함께 하고 싶은 사람과<br>우리만의 공간을 만들어보세요.</p>
                 </li>
                 <li>
-                    <p>모임에 딱 맞는 기능들</p>
+                    <div id="list-img2" class="intro-list-img"></div>
+                    <strong>모임에 딱 맞는 기능들</strong>
                     <p>투표로 의견을 모으로, 함께 일정을 공유하며<br>게시판과 앨범에는 추억을 쌓아보세요.</p>
                 </li>
                 <li>
-                    <p>내가 원하는 모임 찾기</p>
+                    <div id="list-img3" class="intro-list-img"></div>
+                    <strong>내가 원하는 모임 찾기</strong>
                     <p>취미, 스포츠, 또래 모임 등<br>나와 같은 관심사 밴드를 찾을 수 있어요.</p>
                 </li>
             </ul>
