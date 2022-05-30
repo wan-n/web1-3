@@ -2,6 +2,10 @@
     --background-main: #f7f8fa;
     --background-white: #fff;
     --background-green: #21c531;
+    --background-btn-green: #0dcb67;
+    --background-cookie: rgba(34, 34, 34, 0.96);
+    --background-btn-gray:#999;
+    --background-dark-blue: #2a3038;
     --font-green: #2ecc71;
     --font-login: #fafafa;
     --font-dark: #222;
@@ -11,6 +15,7 @@
     --font-light-gray2: #777;
     --font-light-gray3: #999;
     --font-white: #fff;
+    --font-cookie: rgba(255,255,255,.7);
     --border-light-gray: #e1e1e1;
     --border-gray: #888;
     --min-width: 1017px;
@@ -425,6 +430,7 @@ header nav li{
 
 .download-link{
     display: flex;
+    align-items: center;
 }
 
 .android-app{
@@ -445,3 +451,59 @@ header nav li{
 	height: 47px;
     margin-left: 10px;
 }
+
+
+
+/* cookie */
+#cookie{
+    position: sticky;
+    background-color: var(--background-cookie);
+    height: 50px;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-wrapper{
+    width: var(--min-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moreandsetting{
+    color: var(--font-cookie);
+    text-decoration: underline;
+    padding-left: 7px;
+}
+
+.cookie-explanation{
+    font-size: 14px;
+    color: var(--font-white);
+}
+
+.cookie-btn-wrapper{
+    display: flex;
+}
+
+.cookie-btn{
+    display: block;
+    color: var(--font-white);
+    padding: 0 12px;
+    height: 26px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 26px;
+}
+
+#deny{
+    background-color: var(--background-btn-gray);
+}
+
+#allow{
+    background-color: var(--background-btn-green);
+    margin-left: 7px;
+}
+
+
