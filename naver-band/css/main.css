@@ -551,6 +551,10 @@ footer{
     font-weight: 600;
 }
 
+#highlight:hover{
+    text-decoration: underline;
+}
+
 .copyright{
     font-size: 13px;
     color: var(--font-light-gray4);
