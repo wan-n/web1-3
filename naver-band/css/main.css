@@ -7,7 +7,12 @@
     --font-dark: #222;
     --font-dark-gray: #333;
     --font-dark-gray2: #444;
+    --font-light-gray: #666;
+    --font-light-gray2: #777;
+    --font-light-gray3: #999;
     --font-white: #fff;
+    --border-light-gray: #e1e1e1;
+    --border-gray: #888;
     --min-width: 1017px;
 }
 
@@ -37,7 +42,9 @@ header{
 
 h1 a{
     display: block;
-    background: url('../img/spr_intro.png') no-repeat 0 -98px;
+    background: url('../img/spr_intro.png');
+    background-repeat: no-repeat;
+    background-position: 0 -98px;
 	width: 78px;
 	height: 29px;
 }
@@ -173,10 +180,10 @@ header nav li{
     margin-left: 7px;
 }
 
+
+
+/* intro */
 #introduction{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 60px;
     background-color: var(--background-white);
 }
@@ -206,7 +213,7 @@ header nav li{
 }
 
 .intro-list{
-    margin-top: 45px;
+    margin: 45px auto;
     display: flex;
     justify-content: space-between;
     width: var(--min-width);
@@ -225,7 +232,7 @@ header nav li{
     height: 160px;
     border-radius: 3px;
     background-repeat: no-repeat;
-    background-size: 300px auto;
+    background-size: 300px 160px;
 }
 
 #list-img1{
@@ -248,4 +255,124 @@ header nav li{
     line-height: 1.6;
     margin-top: 15px;
     font-size: 15px;
+}
+
+
+/* recommendation */
+#recommendation{
+    padding: 50px 0;
+    margin: 0 auto;
+    width: var(--min-width);
+}
+
+.recommend-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend-header h3{
+    color: var(--font-dark);
+    font-size: 24px;
+}
+
+.recommend-header a{
+    color: var(--font-dark-gray2);
+    font-size: 14px;
+}
+
+.recommend-header a::after{
+    display: inline-block;
+    margin: 3px 0 0 5px;
+    width: 6px;
+    height: 10px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(../img/spr_intro.png);
+    background-position: -116px -129px;
+}
+
+.recommend-area{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.recommend-list{
+    width: 50%;
+}
+
+.recommend-list li{
+    margin-top: 30px;
+}
+
+.recommend-list img{
+    width: 93px;
+    height: 93px;
+}
+
+.recommend-list-anchor{
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.bandinfo{
+    padding: 0 20px 0 12px;
+}
+
+.band-name{
+    color: var(--font-dark);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.band-name:hover{
+    text-decoration: underline;
+}
+
+.band-subtext{
+    margin-top: 9px;
+    color: var(--font-light-gray);
+    font-size: 13px;
+}
+
+.band-member{
+    margin-top: 9px;
+    color: var(--font-light-gray3);
+    font-size: 12px;
+}
+
+.more-link{
+    display: inline-block;
+    margin-top: 9px;
+    padding: 0 8px;
+    height: 26px;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--font-light-gray2);
+    background-color: var(--background-white);
+    border-radius: 25px;
+    border: 1px solid var(--border-light-gray);
+}
+
+.more-link strong{
+    color: var(--font-dark-gray);
+    font-weight: bolder;
+}
+
+.more-link::after{
+    display: inline-block;
+    margin: 9px 0 0 2px;
+    vertical-align: top;
+    width: 6px;
+    height: 10px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(../img/spr_intro.png);
+    background-position: -116px -129px;
+}
+
+.more-link:hover{
+    border: 1px solid var(--border-gray);
 }
