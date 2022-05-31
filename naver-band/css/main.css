@@ -468,7 +468,7 @@ header nav li{
     position: sticky;
     background-color: var(--background-cookie);
     height: 50px;
-    z-index: 10;
+    z-index: 1;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -481,12 +481,6 @@ header nav li{
     align-items: center;
 }
 
-.moreandsetting{
-    color: var(--font-cookie);
-    text-decoration: underline;
-    padding-left: 7px;
-}
-
 .moreandsetting:hover{
     text-decoration: none;
 }
@@ -494,6 +488,13 @@ header nav li{
 .cookie-explanation{
     font-size: 14px;
     color: var(--font-white);
+    padding-right: 7px;
+}
+
+.moreandsetting{
+    font-size: 14px;
+    color: var(--font-cookie);
+    text-decoration: underline;
 }
 
 .cookie-btn-wrapper{
@@ -517,6 +518,39 @@ header nav li{
 #allow{
     background-color: var(--background-btn-green);
     margin-left: 7px;
+}
+
+@media screen and (max-width: 800px) {
+    #cookie{
+        height: 130px;
+        padding: 17px 17px 0;
+    }
+    .cookie-wrapper{
+        align-items: flex-start;
+        display: block;
+    }
+    .cookie-textarea{
+        display: flex;
+        flex-direction: column;
+    }
+    .cookie-explanation{
+        font-size: 24px;
+    }
+    .moreandsetting{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .cookie-btn-wrapper{
+        justify-content: right;
+        margin-top: 10px;
+    }
+    .cookie-btn{
+        padding: 0 16px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 22px;
+        border-radius: 6px;
+    }
 }
 
 
