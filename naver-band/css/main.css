@@ -281,20 +281,29 @@ header nav li{
     font-size: 24px;
 }
 
-.recommend-header a{
+.recommend-header span{
     color: var(--font-dark-gray2);
     font-size: 14px;
 }
 
-.recommend-header a::after{
+.recommend-header .view-all{
+    display: flex;
+    align-items: center;
+}
+
+.recommend-header span::after{
     display: inline-block;
-    margin: 3px 0 0 5px;
+    margin-left: 5px;
     width: 6px;
     height: 10px;
     content: '';
     background-repeat: no-repeat;
     background-image: url(../img/spr_intro.png);
     background-position: -116px -129px;
+}
+
+.recommend-header span:hover{
+    text-decoration: underline;
 }
 
 .recommend-area{
