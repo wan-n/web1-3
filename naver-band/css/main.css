@@ -297,13 +297,8 @@ header nav li{
     background-position: -116px -129px;
 }
 
-.recommend-area{
-
-    margin-top: 10px;
-    width: 100%;
-}
-
 .recommend-list{
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
 }
