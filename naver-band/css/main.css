@@ -298,16 +298,18 @@ header nav li{
 }
 
 .recommend-area{
-    display: flex;
+
     margin-top: 10px;
     width: 100%;
 }
 
 .recommend-list{
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .recommend-list li{
+    width: 50%;
     margin-top: 30px;
 }
 
