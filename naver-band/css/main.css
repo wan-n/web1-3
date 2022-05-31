@@ -297,26 +297,35 @@ header nav li{
     background-position: -116px -129px;
 }
 
-.recommend-list{
+.recommend-area{
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.recommend-list li{
+.recommend-area li{
+    position: relative;
     width: 50%;
     margin-top: 30px;
 }
 
-.recommend-list img{
+.recommend-area img{
     width: 93px;
     height: 93px;
 }
 
-.recommend-list-anchor{
+.recommend-list{
     display: flex;
     align-items: center;
-    cursor: pointer; 
+}
+
+.list-anchor{
+    position: absolute;
+    width: 508.5px;
+    height: 96px;
+    left: 0;
+    top: 0;
+    background-color: transparent;
 }
 
 .bandinfo{
@@ -324,6 +333,7 @@ header nav li{
 }
 
 .band-name{
+    position: relative;
     color: var(--font-dark);
     font-weight: 600;
     font-size: 14px;
@@ -346,6 +356,7 @@ header nav li{
 }
 
 .more-link{
+    position: relative;
     display: inline-block;
     margin-top: 9px;
     padding: 0 8px;
@@ -457,7 +468,7 @@ header nav li{
     position: sticky;
     background-color: var(--background-cookie);
     height: 50px;
-    z-index: 1;
+    z-index: 10;
     bottom: 0;
     display: flex;
     justify-content: center;
