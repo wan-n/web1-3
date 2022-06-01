@@ -28,10 +28,9 @@
   
   .slides{
     position: absolute;
-    left: 0;
+    left: -300px;  /*1번 이미지부터 보이게 함*/
     top: 0;
-    width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
-    transition: left 0.5s ease-out; 
+    width: 2400px; /* 슬라이드할 사진과 마진 총 넓이 */ 
     /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
   }
 
