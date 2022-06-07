@@ -151,13 +151,11 @@ header{
     overflow: hidden;
 }
 
-.nav-main-right{
+.nav-main-right>ul{
     display: flex;
 }
 
-.nav-main-right li{
-    
-}
+
 
 .nav-main-right a{
     font-size: 19px;
