@@ -37,7 +37,7 @@ header{
 
 .nav-top-logo{
     background-color: var(--background-header-red);
-    padding: 0 15px;
+    padding: 0 22px;
     box-sizing: border-box;
 }
 
@@ -49,7 +49,7 @@ header{
     line-height: 45px;
     color: var(--font-header-white);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .left-list a{
@@ -153,18 +153,17 @@ header{
 
 .nav-main-right{
     display: flex;
-    justify-content: space-between;
-
 }
 
 .nav-main-right li{
-    padding: 0 20px;
+    
 }
 
 .nav-main-right a{
     font-size: 19px;
     color: var(--font-header-gray);
     font-weight: 600;
+    padding: 20px 20px;
 }
 
 
