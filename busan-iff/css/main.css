@@ -1,12 +1,12 @@
 :root{
-    --background-header-white: #f5f5f5;
+    --background-white: #f5f5f5;
     --background-header-red: #d82f36;
     --background-header-dropdown-white: #fff;
     --background-header-mainnav-white: #fff;
     --border-header-dropdown-lightgray: #ccc;
     --font-header-dropdown-darkgray: #747474;
     --font-header-dropdown-red: #cd1d1d;
-    --font-header-white: #fff;
+    --font-white: #fff;
     --font-header-gray: #424242;
     --font-header-lightgray: #888;
 }
@@ -16,9 +16,9 @@
 /* header */
 
 /* nav-top */
-header{
+.nav-top-container{
     height: 45px;
-    background-color: var(--background-header-white);
+    background-color: var(--background-white);
 }
 
 .nav-top{
@@ -47,7 +47,7 @@ header{
 
 .nav-top-logo a{
     line-height: 45px;
-    color: var(--font-header-white);
+    color: var(--font-white);
     font-weight: 600;
     font-size: 12px;
 }
@@ -86,7 +86,7 @@ header{
 
 .lang-dropdown-content{
     display: none;
-    z-index: 1;      
+    z-index: 50;      
     position: absolute;
     background-color: var(--background-header-dropdown-white);
     right: 0;
@@ -155,16 +155,12 @@ header{
     display: flex;
 }
 
-
-
 .nav-main-right a{
     font-size: 19px;
     color: var(--font-header-gray);
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px 20px;
 }
-
-
 
 .nav-dropdown-content{
     display: none;
@@ -173,11 +169,145 @@ header{
 
 
 
-@media screen and (max-width: 1024px) {
-    .nav-top-wrapper{
+/* main-slide */
+
+#main-slide{
+    position: relative;
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+
+}
+
+#main-slide li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease-in;
+}
+
+.main-slide-img-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-slide-text-area{
+    display: block;
+    max-width: 1295px;
+    width: 100%;
+}
+
+.main-slide-text-area p{
+    color: var(--font-white);
+}
+
+.main-title-small{
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.8;
+}
+.main-title-big{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.25;
+}
+
+.main-subtext{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.main-slide-arrow{
+    position: absolute;
+    height: 15px;
+    left: 320px;
+    bottom: 60px;
+    z-index: 10;
+}
+
+.main-slide-arrow a, span{
+    line-height: 15px;
+}
+
+.sep-arrow{
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    background-color: var(--font-white);
+    opacity: 0.7;
+    margin: 0 20px;
+}
+
+#main-slide-img1{
+    background-image: url(../img/visual_0323.jpg);
+    z-index: 1; 
+}
+
+#main-slide-img2{
+    background-image: url(../img/visual_0323.jpg);
+}
+
+#main-slide-img3{
+    background-image: url(../img/visual_0512.jpg);
+    
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+/* 1024 햄버거메뉴, 1008 nav-right none*/
+@media screen and (max-width: 768px) {
+    .main-slide-arrow{
         display: none;
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav-top-container{
+        display: none;
+    }
+
+    .main-slide-img-area{
+        padding-left: 30px;
+    }
+    .main-title-small{
+        font-size: 20px;
+    }
+    .main-title-big{
+        font-size: 34px;
+        margin-top: 40px;
+    }
+    .main-subtext{
+        font-size: 20px;
+    }
+    .main-slide-arrow{
+        left: 40px;
+    }
     
+}
+
+@media screen and (max-width: 1088px) {
+    .nav-main-right{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1240px) {

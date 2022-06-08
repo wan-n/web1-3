@@ -10,35 +10,37 @@
 </head>
 <body>
     <header>
-        <nav class="nav-top">
-            <ul class="nav-top-left">
-                <li class="nav-top-logo"><a href="#">BIFF</a></li>
-                <li class="left-list"><a href="#">Asian Contents & Film Market</a></li>
-                <li class="left-list"><a href="#">APM</a></li>
-                <li class="left-list"><a href="#">BAFA</a></li>
-                <li class="left-list"><a href="#">ACF</a></li>
-                <li class="left-list"><a href="#">BFA</a></li>
-                <li class="left-list"><a href="#">ACA</a></li>
-                <li class="left-list"><a href="#">Community BIFF</a></li>
-                <li class="left-list"><a href="#">Forum BIFF</a></li>
-                <li class="left-list"><a href="#">PRESS Service</a></li>
-            </ul>
-            <ul class="nav-top-right">
-                <li class="right-list"><a href="#">로그인</a></li>
-                <li class="right-list"><a href="#">1:1 문의</a></li>
-                <li id="lang-dropdown">
-                    <a href="#">
-                        <figure>
-                            <img src="img/btn_lang.png" alt="드롭다운_버튼">
-                        </figure>
-                    </a>
-                    <div class="lang-dropdown-content">
-                        <a href="#" class="lang-ko">한국어</a>
-                        <a href="#" class="lang-en">ENGLISH</a>
-                    </div>
-                </li>
-            </ul>                
-        </nav>
+        <div class="nav-top-container">
+            <nav class="nav-top">
+                <ul class="nav-top-left">
+                    <li class="nav-top-logo"><a href="#">BIFF</a></li>
+                    <li class="left-list"><a href="#">Asian Contents & Film Market</a></li>
+                    <li class="left-list"><a href="#">APM</a></li>
+                    <li class="left-list"><a href="#">BAFA</a></li>
+                    <li class="left-list"><a href="#">ACF</a></li>
+                    <li class="left-list"><a href="#">BFA</a></li>
+                    <li class="left-list"><a href="#">ACA</a></li>
+                    <li class="left-list"><a href="#">Community BIFF</a></li>
+                    <li class="left-list"><a href="#">Forum BIFF</a></li>
+                    <li class="left-list"><a href="#">PRESS Service</a></li>
+                </ul>
+                <ul class="nav-top-right">
+                    <li class="right-list"><a href="#">로그인</a></li>
+                    <li class="right-list"><a href="#">1:1 문의</a></li>
+                    <li id="lang-dropdown">
+                        <a href="#">
+                            <figure>
+                                <img src="img/btn_lang.png" alt="드롭다운_버튼">
+                            </figure>
+                        </a>
+                        <div class="lang-dropdown-content">
+                            <a href="#" class="lang-ko">한국어</a>
+                            <a href="#" class="lang-en">ENGLISH</a>
+                        </div>
+                    </li>
+                </ul>                
+            </nav>
+        </div>
         <!--
             네비게이션 a에 호버 시 nav-main의 height, 드롭다운의 height 크기 확장.
         -->
@@ -120,44 +122,47 @@
     </header>
     <main>
         <div id="main-slide">
-            <div class="main-slide-container">
-                <ul class="main-slide-list">
-                    <li id="main-slide-img1">
-                        <a href="#" class="main-slide-text-area">
-                            <p class="title-small">2022년 제 27회 부산국제영화제</p>
-                            <p class="title-big">2차 계약직 직원 수시채용</p>
-                            <p class="subtext">
-                                원서접수:
-                                <br>2022년 5월 25일(수)~
-                            </p>
-                        </a>
-                    </li>
-                    <li id="main-slide-img2">
-                        <a href="#" class="main-slide-text-area">
-                            <p class="title-small">2022년 제 27회 부산국제영화제</p>
-                            <p class="title-big">공식상영작(장/단편) 출품 공모</p>
-                            <p class="subtext">
-                                출품 마감:
-                                <br>단편 2022년 6월 22일(수) 18:00
-                                <br>장편 2022년 7월 20일(수) 18:00
-                            </p>
-                        </a>
-                    </li>
-                    <li id="main-slide-img3">
-                        <a href="#" class="main-slide-text-area">
-                            <p class="main-title-small">2022년 새롭게 시작되는</p>
-                            <p class="main-title-big">CHANEL X BIFF 아시아 영화아카데미</p>
-                            <p class="main-subtext">
-                                2022년, 코로나바이러스감염증-19로 인해 일시 중단되었던 부산국제영화제 교육프로그램 아시아영화아카데미가 샤넬과 만나
-                                <br>CHANEL X BIFF 아시아영화아카데미 (CHANEL X BIFF ASIAN FILM ACADEMY)로 새롭게 돌아왔습니다.
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <div>
-                    <a href="#" class="left-arrow"></a>
-                    <a href="#" class="right-arrow"></a>
-                </div>
+            <ul class="main-slide-list">
+                <li id="main-slide-img1" class="main-slide-img-area">
+                    <a href="#" class="main-slide-text-area">
+                        <p class="main-title-small">2022년 제 27회 부산국제영화제</p>
+                        <p class="main-title-big">2차 계약직 직원 수시채용</p>
+                        <p class="main-subtext">
+                            원서접수:
+                            <br>2022년 5월 25일(수)~
+                        </p>
+                    </a>
+                </li>
+                <li id="main-slide-img2" class="main-slide-img-area">
+                    <a href="#" class="main-slide-text-area">
+                        <p class="main-title-small">2022년 제 27회 부산국제영화제</p>
+                        <p class="main-title-big">공식상영작(장/단편) 출품 공모</p>
+                        <p class="main-subtext">
+                            출품 마감:
+                            <br>단편 2022년 6월 22일(수) 18:00
+                            <br>장편 2022년 7월 20일(수) 18:00
+                        </p>
+                    </a>
+                </li>
+                <li id="main-slide-img3" class="main-slide-img-area">
+                    <a href="#" class="main-slide-text-area">
+                        <p class="main-title-small">2022년 새롭게 시작되는</p>
+                        <p class="main-title-big">CHANEL X BIFF 아시아 영화아카데미</p>
+                        <p class="main-subtext">
+                            2022년, 코로나바이러스감염증-19로 인해 일시 중단되었던 부산국제영화제 교육프로그램 아시아영화아카데미가 샤넬과 만나
+                            <br>CHANEL X BIFF 아시아영화아카데미 (CHANEL X BIFF ASIAN FILM ACADEMY)로 새롭게 돌아왔습니다.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <div class="main-slide-arrow">
+                <a href="#" class="left-arrow">
+                    <img src="img/btn_main_prev.png" alt="슬라이드_좌버튼">
+                </a>
+                <span class="sep-arrow"></span>
+                <a href="#" class="right-arrow">
+                    <img src="img/btn_main_next.png" alt="슬라이드_우버튼">
+                </a>
             </div>
         </div>
         <div id="news">
