@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            font-size: 10px;
+        }
+        #word{
+            background: red;
+        }
+        #hex{
+            background: #ff0000;
+        }
+        #rgb{
+            background: rgb(255, 0, 0);
+        }
+        #hsl{
+            background: hsl(0, 100%, 50%);
+        }
+        #rgba{
+            background: rgba(255, 0, 0, 0.5);
+        }
+        #hsla{
+            background: hsla(0, 100%, 50%, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="word">word:단어로 입력하는 형식</div>
+    <div id="hex">hex: #웹 번호로 입력하는 형식</div>
+    <div id="rgb">rgb: rgb(red,green,blue)</div>
+    <div id="hsl">hsl: hsl(hue,saturation,lightness)</div>
+    <div id="rgba">tgba: rgb형식에서 alpha값 추가</div>
+    <div id="hsla">hsla: hsl 형식에서 alpha값 추가</div>
+</body>
+</html>

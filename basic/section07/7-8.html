@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            padding: 30px;
+        }
+        .box1{
+            box-sizing: border-box;
+        }
+        .box2{
+            /* 기본값 */
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- border-box -->
+    <div class="box1">01</div>
+    <!-- content-box -->
+    <div class="box2">02</div>
+</body>
+</html>
