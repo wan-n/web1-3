@@ -1,7 +1,11 @@
 :root{
     --background-top-nav: rgba(0,0,0,0.8);
-    --background-ipad-nav: #000;
+    --background-black: #000;
+    --background-white: #fff;
+    --background-purchase: #0071e3;
     --font-new: #f56300;
+    --font-white: #fff;
+    --font-more: #2997ff;
 }
 
 .top-nav{
@@ -51,7 +55,7 @@
 
 .hamburger-menu span{
     display: block;
-    background-color: #fff;
+    background-color: var(--background-white);
     height: 1px;
     width: 15px;
     border-radius: 0.5px;
@@ -116,7 +120,7 @@
     background-image: url(../img/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg);
 }
 
-#top-nav-onlyonapple{
+#top-nav-only-on-apple{
     width: 80px;
     background-image: url(../img/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg);
 }
@@ -147,10 +151,11 @@
 
 /* ipad-nav */
 .ipad-nav{
-    background-color: var(--background-ipad-nav);
+    background-color: var(--background-black);
     height: 100px;
     padding-top: 8px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .ipad-nav-list{
@@ -190,13 +195,13 @@
     line-height: 1.2;
 }
 
-#ipad-nav-ipadpro{
+#ipad-nav-ipad-pro{
     background-image: url(../img/ipadpro_dark__175htbn6m76u_large.svg);
     background-size: 41px 54px;
     width: 41px;
 }
 
-#ipad-nav-ipadair{
+#ipad-nav-ipad-air{
     background-image: url(../img/ipadair_dark__gi1t1iqta1yu_large.svg);
     background-size: 30px 54px;
     width: 30px;
@@ -208,7 +213,7 @@
     width: 30px;
 }
 
-#ipad-nav-ipadmini{
+#ipad-nav-ipad-mini{
     background-image: url(../img/ipadmini_dark__cdfcygd422uu_large.svg);
     background-size: 23px 54px;
     width: 23px;
@@ -220,7 +225,7 @@
     width: 45px;
 }
 
-#ipad-nav-applepencil{
+#ipad-nav-apple-pencil{
     background-image: url(../img/apple_pencil_dark__c42qcvi9e802_large.svg);
     background-size: 3px 54px;
     width: 3px;
@@ -244,7 +249,7 @@
     width: 31px;
 }
 
-#ipad-nav-ipados{
+#ipad-nav-ipad-os{
     background-image: url(../img/ipados_dark__emr7k8pfle4i_large.svg);
     background-size: 32px 54px;
     width: 32px;
@@ -259,6 +264,115 @@
 
 
 
+/* main-items-intro */
+.intro-ipad-air-container{
+    padding: 68px 0;
+    background-color: var(--background-black);
+}
+
+.intro-ipad-air{
+    margin: 0 auto;
+    width: 980px;
+    display: flex;
+    align-items: center;
+}
+
+.intro-ipad-air-text-area{
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-ipad-air-img-area{
+    background-image: url(../img/ipad_air__d794tkovmk02_large.jpg);
+    width: 680px;
+    height: 695px;
+    background-size: 680px 695px;
+    background-repeat: no-repeat;
+}
+
+.main-new{
+    color: var(--font-new);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.intro-ipad-air-title h2{
+    display: inline-block;
+}
+
+.intro-title-text{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.intro-ipad-air-title-text{
+    color: var(--font-white);
+}
+
+.intro-ipad-air-title-img{
+    display: inline-block;
+    background-image: url(../img/air_script__coyet2g7gkia_large.png);
+    background-size: 88px 46px;
+    width: 88px;
+    height: 46px;
+    margin-bottom: -4px;
+}
+
+.intro-ipad-air-subtext{
+    color: var(--font-white);
+}
+
+.intro-subtext{
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.intro-ipad-air-price{
+    color: var(--font-white);
+}
+
+.intro-price{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.intro-purchase{
+    display: inline-block;
+    margin: 13px 0;
+    padding: 8px 16px;
+    background-color: var(--background-purchase);
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 25px;
+    color: var(--font-white);
+}
+
+.intro-more{
+    color: var(--font-more);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.intro-more::after{
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-top : 2px solid var(--font-more);
+    border-right : 2px solid var(--font-more);
+    background-color: transparent;
+    transform: rotate(45deg);
+    margin: 0 0 4px 2px;
+}
+
+
+
 
 
 @media screen and (max-width: 833px) {
@@ -270,9 +384,11 @@
     }
     #top-nav-apple-logo{
         width: 17px;
+        background-image: url(../img/globalnav_apple_image__b5er5ngrzxqq_small.svg);
     }
     #top-nav-cart{
         width: 15px;
+        background-image: url(../img/globalnav_bag_image__yzte50i47ciu_small.svg);
     }
     .top-nav-list{
         height: 48px;
@@ -284,4 +400,80 @@
         background-size: auto 48px;
     }
     
+}
+
+@media screen and (max-width: 1068px) {
+    /* intro */
+    .intro-ipad-air-img-area{
+        background-image: url(../img/ipad_air__d794tkovmk02_medium.jpg);
+        width: 504px;
+        height: 515px;
+        background-size: 504px 515px;
+    }
+    .intro-ipad-air{
+        width: 692px;
+    }
+    .intro-ipad-air-text-area{
+        width: 188px;
+    }
+    .intro-ipad-air-title-img{
+        background-image: url(../img/air_script__coyet2g7gkia_medium.png);
+        background-size: 74px 40px;
+        width: 74px;
+        height: 40px;
+        margin-bottom: -3px;
+    }
+    .intro-title-text{
+        font-size: 48px;
+    }
+    .intro-subtext{
+        font-size: 19px;
+    }
+    .intro-purchase{
+        margin: 11px 0 8px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    /* intro */
+    .intro-ipad-air-img-area{
+        background-image: url(../img/ipad_air__d794tkovmk02_small.jpg);
+        width: 100%;
+        height: 317px;
+        background-size: auto 317px;
+    }
+    .main-new{
+        margin-top: -18px;
+    }
+    .intro-ipad-air{
+        flex-direction: column;
+        justify-content: center;
+        width: 320px;
+    }
+    .intro-ipad-air-text-area{
+        width: 100%;
+        margin-bottom: 36px;
+    }
+    .intro-title-text{
+        font-size: 40px;
+    }
+    .intro-ipad-air-title-img{
+        background-image: url(../img/air_script__coyet2g7gkia_small.png);
+        background-size: 60px 32px;
+        width: 60px;
+        height: 32px;
+        margin-left: -4px;
+        margin-bottom: -2px;
+    }
+    .intro-subtext{
+        margin-top: 7px;
+        font-size: 17px;
+    }
+    .intro-price{
+        margin-top: 17px;
+        font-size: 17px;
+    }
+    .intro-purchase{
+        margin: 7px 0 9px;
+    }
 }
