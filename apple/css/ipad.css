@@ -5,7 +5,7 @@
     --background-purchase: #0071e3;
     --font-new: #f56300;
     --font-white: #fff;
-    --font-more: #2997ff;
+    --font-blue: #2997ff;
 }
 
 .top-nav{
@@ -37,6 +37,11 @@
     text-align: center;
     line-height: 44px;
     opacity: .8;
+    transition: opacity 0.3s;
+}
+
+.top-nav-list a:hover{
+    opacity: 1;
 }
 
 .hamburger-menu-container{
@@ -187,6 +192,10 @@
     color: #fff;
     font-size: 12px;
     line-height: 1.3;
+}
+
+.ipad-nav-list a:hover .ipad-nav-text{
+    color: var(--font-blue);
 }
 
 .new{
@@ -354,7 +363,7 @@
 }
 
 .intro-more{
-    color: var(--font-more);
+    color: var(--font-blue);
     line-height: 1.6;
     font-size: 15px;
 }
@@ -364,8 +373,8 @@
     content: '';
     width: 4px;
     height: 4px;
-    border-top : 2px solid var(--font-more);
-    border-right : 2px solid var(--font-more);
+    border-top : 2px solid var(--font-blue);
+    border-right : 2px solid var(--font-blue);
     background-color: transparent;
     transform: rotate(45deg);
     margin: 0 0 4px 2px;
