@@ -4,14 +4,14 @@
     --font-new: #f56300;
 }
 
-.top_nav{
+.top-nav{
     background-color: var(--background-top-nav);
 }
 
 
 
-/* top_nav */
-.top_nav_list{
+/* top-nav */
+.top-nav-list{
     height: 44px;
     max-width: 996px;
     min-width: 337px;
@@ -21,7 +21,7 @@
     justify-content: space-between;
 }
 
-.top_nav_list a{
+.top-nav-list a{
     position: relative;
     display: block;
     height: 44px;
@@ -47,84 +47,84 @@
     display: none;
 }
 
-#top_nav_apple_logo{
+#top-nav-apple-logo{
     width: 14px;
     background-image: url(../img/globalnav_apple_image__b5er5ngrzxqq_large.svg);
 }
 
-#top_nav_store{
+#top-nav-store{
     width: 30px;
     background-image: url(../img/globalnav_links_store_image__c7jy08initqq_large.svg);
 }
 
-#top_nav_mac{
+#top-nav-mac{
     width: 23px;
     background-image: url(../img/globalnav_links_mac_image__dazlko3t9a6a_large.svg);
 }
 
-#top_nav_ipad{
+#top-nav-ipad{
     width: 24px;
     background-image: url(../img/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg);
 }
 
-#top_nav_iphone{
+#top-nav-iphone{
     width: 38px;
     background-image: url(../img/globalnav_links_iphone_image__ko7x4isga4ia_large.svg);
 }
 
-#top_nav_watch{
+#top-nav-watch{
     width: 35px;
     background-image: url(../img/globalnav_links_watch_image__gkoblojrlsqe_large.svg);
 }
 
-#top_nav_airpods{
+#top-nav-airpods{
     width: 43px;
     background-image: url(../img/globalnav_links_airpods_image__f969s84ivmaa_large.svg);
 }
 
-#top_nav_tvhome{
+#top-nav-tvhome{
     width: 42px;
     background-image: url(../img/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg);
 }
 
-#top_nav_onlyonapple{
+#top-nav-onlyonapple{
     width: 80px;
     background-image: url(../img/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg);
 }
 
-#top_nav_accessories{
+#top-nav-accessories{
     width: 40px;
     background-image: url(../img/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg);
 }
 
-#top_nav_support{
+#top-nav-support{
     width: 39px;
     background-image: url(../img/globalnav_links_support_image__bw9kctll7u3m_large.svg);
 }
 
-#top_nav_search{
+#top-nav-search{
     width: 15px;
     background-image: url(../img/globalnav_search_image__cbllq1gkias2_large.svg);
     background-position: center top;
     background-size: auto 88px;
 }
 
-#top_nav_cart{
+#top-nav-cart{
     width: 13px;
     background-image: url(../img/globalnav_bag_image__yzte50i47ciu_large.svg);
 }
 
 
 
-/* ipad_nav */
-.ipad_nav{
+/* ipad-nav */
+.ipad-nav{
     background-color: var(--background-ipad-nav);
     height: 100px;
     padding-top: 8px;
     box-sizing: border-box;
 }
 
-.ipad_nav_list{
+.ipad-nav-list{
     width: 956px;
     margin: 0 auto;
     padding: 0 30px;
@@ -134,11 +134,11 @@
 }
 
 
-.ipad_nav_list a{
+.ipad-nav-list a{
     display: block;
 }
 
-.ipad_nav_list figure{
+.ipad-nav-list figure{
     background-repeat: no-repeat;
     background-size: 41px 54px;
     width: 41px;
@@ -146,12 +146,12 @@
     margin: 0 auto 7px;
 }
 
-.ipad_nav_list a span{
+.ipad-nav-list a span{
     display: block;
     text-align: center;
 }
 
-.ipad_nav_text{
+.ipad-nav-text{
     color: #fff;
     font-size: 12px;
     line-height: 1.3;
@@ -163,32 +163,48 @@
     line-height: 1.2;
 }
 
-#ipad_nav_ipadpro{
+#ipad-nav-ipadpro{
     background-image: url(../img/ipadpro_dark__175htbn6m76u_large.svg);
 }
 
-#ipad_nav_ipadair{
+#ipad-nav-ipadair{
     background-image: url(../img/ipadair_dark__gi1t1iqta1yu_large.svg);
 }
 
-#ipad_nav_ipad{
+#ipad-nav-ipad{
     background-image: url(../img/ipad_dark__fe8ocv9hktim_large.svg);
 }
 
-#ipad_nav_ipadmini{
+#ipad-nav-ipadmini{
     background-image: url(../img/ipadmini_dark__cdfcygd422uu_large.svg);
 }
 
-#ipad_nav_compare{
+#ipad-nav-compare{
     background-image: url(../img/ipad_compare_dark__cxllw9w1tuy6_large.svg);
 }
 
-#ipad_nav_applepencil{
+#ipad-nav-applepencil{
     background-image: url(../img/apple_pencil_dark__c42qcvi9e802_large.svg);
 }
 
-#ipad_nav_keyboard{
+#ipad-nav-keyboard{
     background-image: url(../img/keyboard_dark__dtedyad0xnqu_large.svg);
+}
+
+#ipad-nav-airpods{
+    background-image: url(../img/airpods_dark__ccoezo86z37m_large.svg);
+}
+
+#ipad-nav-accessories{
+    background-image: url(../img/ipad_acc_dark__bo0a4ftei9au_large.svg);
+}
+
+#ipad-nav-ipados{
+    background-image: url(../img/ipados_dark__emr7k8pfle4i_large.svg);
+}
+
+#ipad-nav-shopping{
+    background-image: url(../img/shop_ipad_dark__ekfl60g78g4m_large.svg);
 }
 
 
@@ -200,7 +216,7 @@
     #hamburger-menu{
         display: block;
     }
-    .top_nav_display_none{
+    .top-nav-display-none{
         display: none;
     }
 }
