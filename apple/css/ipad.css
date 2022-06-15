@@ -3,6 +3,7 @@
     --background-black: #000;
     --background-white: #fff;
     --background-purchase: #0071e3;
+    --background-purchase-hover: #0077ed;
     --font-new: #f56300;
     --font-white: #fff;
     --font-blue: #2997ff;
@@ -357,15 +358,24 @@
     padding: 8px 16px;
     background-color: var(--background-purchase);
     font-size: 15px;
+    font-weight: 600;
     line-height: 1.5;
     border-radius: 25px;
     color: var(--font-white);
+}
+
+.intro-purchase:hover{
+    background-color: var(--background-purchase-hover);
 }
 
 .intro-more{
     color: var(--font-blue);
     line-height: 1.6;
     font-size: 15px;
+}
+
+.intro-more:hover{
+    text-decoration: underline;
 }
 
 .intro-more::after{
