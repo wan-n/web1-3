@@ -1,4 +1,5 @@
 :root{
+    --background: #f5f5f7;
     --background-top-nav: rgba(0,0,0,0.8);
     --background-black: #000;
     --background-white: #fff;
@@ -7,6 +8,10 @@
     --font-new: #f56300;
     --font-white: #fff;
     --font-blue: #2997ff;
+}
+
+body{
+    background-color: var(--background);
 }
 
 .top-nav{
@@ -275,8 +280,11 @@
 
 
 /* main-items-intro */
+/* ipad air */
 .intro-ipad-air-container{
+    position: relative;
     padding: 68px 0;
+    margin-bottom: 13px;
     background-color: var(--background-black);
 }
 
@@ -287,12 +295,22 @@
     align-items: center;
 }
 
+.click-area{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .intro-ipad-air-text-area{
     width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
 }
 
 .intro-ipad-air-img-area{
@@ -372,6 +390,7 @@
     color: var(--font-blue);
     line-height: 1.6;
     font-size: 15px;
+    font-weight: 600;
 }
 
 .intro-more:hover{
@@ -390,6 +409,47 @@
     margin: 0 0 4px 2px;
 }
 
+
+
+/* ipad pro */
+.intro-ipad-pro-container{
+    position: relative;
+    padding: 80px 0;
+    margin-bottom: 13px;
+    background-color: var(--background-white);
+    overflow: hidden;
+}
+
+.intro-ipad-pro{
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.intro-ipad-pro-img-area{
+    flex-basis: 33%;
+    max-width: 33%;  
+    margin-left: 16%;
+}
+
+.intro-ipad-pro-img{
+    width: 1335px;
+    height: 598px;
+    background-image: url(../img/ipad_pro_hero__bh3eq6sqfjw2_large.jpg);
+    background-size: 1335px 598px;
+    background-repeat: no-repeat;
+}
+
+.intro-ipad-pro-text-area{
+    flex-basis: 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -120px 0 0 20px;
+    z-index: 10;
+}
 
 
 
@@ -442,6 +502,35 @@
         height: 40px;
         margin-bottom: -3px;
     }
+
+    
+    .intro-ipad-pro{
+        width: 692px;
+    }
+    .intro-ipad-pro-img{
+        width: 831px;
+        height: 430px;
+        background-image: url(../img/ipad_pro_hero__bh3eq6sqfjw2_medium.jpg);
+        background-size: 831px 430px;
+    }
+    .intro-ipad-pro-img-area{
+        flex-basis: 33%;
+        max-width: 33%;  
+        margin-left: 8%;
+    }
+    .intro-ipad-pro-text-area{
+        flex-basis: 33%;
+        max-width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -120px 0 0 0;
+    }
+
+
+
+
+
     .intro-title-text{
         font-size: 48px;
     }
@@ -467,15 +556,13 @@
     .intro-ipad-air{
         flex-direction: column;
         justify-content: center;
-        width: 320px;
+        width: 310px;
     }
     .intro-ipad-air-text-area{
         width: 100%;
         margin-bottom: 36px;
     }
-    .intro-title-text{
-        font-size: 40px;
-    }
+
     .intro-ipad-air-title-img{
         background-image: url(../img/air_script__coyet2g7gkia_small.png);
         background-size: 60px 32px;
@@ -483,6 +570,39 @@
         height: 32px;
         margin-left: -4px;
         margin-bottom: -2px;
+    }
+
+
+
+    .intro-ipad-pro-container{
+        padding: 50px 0 20px;
+    }
+    .intro-ipad-pro{
+        width: 320px;
+        flex-wrap: wrap-reverse;
+    }
+    .intro-ipad-pro-img{
+        width: 540px;
+        height: 268px;
+        background-image: url(../img/ipad_pro_hero__bh3eq6sqfjw2_small.jpg);
+        background-size: 540px 268px;
+    }
+    .intro-ipad-pro-img-area{
+        flex-basis: 100%;
+        max-width: 100%;  
+        margin-left: 0;
+    }
+    .intro-ipad-pro-text-area{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: -20px 0 0 0;
+    }
+
+
+
+
+    .intro-title-text{
+        font-size: 40px;
     }
     .intro-subtext{
         margin-top: 7px;
