@@ -8,6 +8,7 @@
     --font-new: #f56300;
     --font-new-intro: #bf4800;
     --font-white: #fff;
+    --font-black: #000;
     --font-blue: #2997ff;
     --font-more-intro: #06c;
     --border-gray: #d2d2d7;
@@ -15,8 +16,8 @@
 
 body{
     background-color: var(--background);
-    font-family: 'SF Pro Text';
     letter-spacing: -0.02em;
+    font-family:"SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .top-nav{
@@ -717,11 +718,13 @@ body{
 .spec-display-detail{
     font-size: 14px;
     line-height: 1.5;
+    word-break: keep-all;
 }
 
-.spec-display-detail sup{
+.spec-display-detail sup a{
     vertical-align: super;
-    font-size: 0.2em;
+    font-size: 0.1em;
+    color: var(--font-black);
 }
 
 
