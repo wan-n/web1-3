@@ -1243,6 +1243,7 @@ footer{
         font-weight: normal;
         margin-top: -2px;
         margin-right: 8px;
+        transition: transform 0.2s;
     }
 
     .footer-nav-title:hover{
@@ -1254,6 +1255,7 @@ footer{
         height: 0;
     }
 
+
     input[class="footer-nav-accordion"]:checked ~ .footer-nav-list{
         visibility: visible;
         padding: 5px 0 16px;
@@ -1263,7 +1265,6 @@ footer{
 
     input[class="footer-nav-accordion"]:checked + .footer-nav-title::after{
         transform: rotate(45deg);
-        transition: transform 0.2s;
     }
 
     .footer-nav-list li{
