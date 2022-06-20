@@ -1338,7 +1338,7 @@ footer{
     }
 
 
-    input[class="footer-nav-accordion"]:checked ~ .footer-nav-list{
+    input[class="footer-nav-accordion"]:checked + .footer-nav-title + .footer-nav-list{
         visibility: visible;
         padding: 5px 0 16px;
         width: 100%;
