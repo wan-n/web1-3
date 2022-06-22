@@ -1175,6 +1175,11 @@ footer{
     display: none;
 }
 
+.footer-nav-list{
+    position: relative;
+    z-index: -1;
+}
+
 .footer-nav-list li{
     margin-bottom: 11px;
 }
@@ -1186,6 +1191,12 @@ footer{
 .footer-nav-list li a:hover{
     text-decoration: underline;
 } 
+
+.footer-nav-title, .nav-location, .footer-note-container{
+    position: relative;
+    background-color: var(--background);
+    z-index: 2;
+}
 
 
 
@@ -1309,7 +1320,6 @@ footer{
     }
 
     .footer-nav-title{
-        position: relative;
         display: inline-block;
         width: 100%;
         color: var(--font-footer-gray);
@@ -1318,8 +1328,6 @@ footer{
         padding: 10px 0;
         cursor: pointer;
         margin: 0;
-        z-index: 2;
-        background-color: var(--background);
     }
 
     .footer-nav-title::after{
@@ -1339,12 +1347,11 @@ footer{
     .footer-nav-list{
         visibility: hidden;
         height: 0;
+        transform: translateY(-100%);
     }
 
     .footer-nav-list li{
         margin: 0;
-        transform: translateY(-100%);
-        position: relative;
     }
     
     .footer-nav-list li a{
@@ -1358,16 +1365,13 @@ footer{
         padding: 5px 0 16px;
         width: 100%;
         height: auto;
+        transform: translateY(0%);
+        transition: transform 0.3s;
     }
 
     input[class="footer-nav-accordion"]:checked + .footer-nav-title::after{
         transform: rotate(45deg);
     }
-
-    input[class="footer-nav-accordion"]:checked + .footer-nav-title + .footer-nav-list li{
-        transform: translateY(0%);
-        transition: transform 0.3s;
-    } 
  
     
     
