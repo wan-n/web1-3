@@ -1175,11 +1175,6 @@ footer{
     display: none;
 }
 
-.footer-nav-list{
-    position: relative;
-    z-index: -1;
-}
-
 .footer-nav-list li{
     margin-bottom: 11px;
 }
@@ -1192,11 +1187,7 @@ footer{
     text-decoration: underline;
 } 
 
-.footer-nav-title, .nav-location, .footer-note-container{
-    position: relative;
-    background-color: var(--background);
-    z-index: 2;
-}
+
 
 
 
@@ -1348,6 +1339,13 @@ footer{
         visibility: hidden;
         height: 0;
         transform: translateY(-100%);
+        position: relative;
+    }
+
+    .footer-nav-title, .nav-location, .footer-note-container{
+        position: relative;
+        background-color: var(--background);
+        z-index: 2;
     }
 
     .footer-nav-list li{
