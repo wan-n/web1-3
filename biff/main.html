@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css">
 </head>
 <body>
     <header>
@@ -47,13 +48,13 @@
         <div class="nav-main-container">
             <div class="nav-main">
                 <div>
-                    <figure><img src="img/toplogo.png" alt="BIFF LOGO"></figure>
+                    <a href="#"><figure class="nav-main-logo-img"></figure></a>
                     <h1 class="hidden">Busan International Film Festival</h1>
                 </div>
                 <nav class="nav-main-right">
-                    <ul>
+                    <ul class="nav-main-right-list">
                         <li>
-                            <a href="#">부산국제영화제</a>
+                            <a href="#" class="nav-main-right-list-title">부산국제영화제</a>
                             <ul class="nav-dropdown-content">
                                 <li><a href="#">개최개요</a></li>
                                 <li><a href="#">프로그램 섹션</a></li>
@@ -65,7 +66,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">출품/신청안내</a>
+                            <a href="#" class="nav-main-right-list-title">출품/신청안내</a>
                             <ul class="nav-dropdown-content">
                                 <li><a href="#">출품신청안내</a></li>
                                 <li><a href="#">공식 상영작</a></li>
@@ -77,7 +78,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">참가안내</a>
+                            <a href="#" class="nav-main-right-list-title">참가안내</a>
                             <ul class="nav-dropdown-content">
                                 <li><a href="#">참가안내</a></li>
                                 <li><a href="#">영화제</a></li>
@@ -89,7 +90,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">커뮤니티</a>
+                            <a href="#" class="nav-main-right-list-title">커뮤니티</a>
                             <ul class="nav-dropdown-content">
                                 <li><a href="#">공지사항</a></li>
                                 <li><a href="#">BIFF 뉴스</a></li>
@@ -99,7 +100,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">역대영화제</a>
+                            <a href="#" class="nav-main-right-list-title">역대영화제</a>
                             <ul class="nav-dropdown-content">
                                 <li><a href="#">상영작 통합검색</a></li>
                                 <li><a href="#">영화제 발자취</a></li>
@@ -108,35 +109,38 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">스태프채용</a>
+                            <a href="#" class="nav-main-right-list-title">스태프채용</a>
                             <ul class="nav-dropdown-content">
                                 <li><a href="#">스태프채용</a></li>
                                 <li><a href="#">모집요강</a></li>
                             </ul>
                         </li>
                     </ul>
+                    <div class="hamburger-menu">
+                        <span></span><span></span><span></span>
+                    </div>
                 </nav>
             </div>
         </div>
         
     </header>
     <main>
-        <div id="main-slide">
+        <section class="main-slide">
             <ul class="main-slide-list">
-                <li id="main-slide-img1" class="main-slide-img-area">
+                <li class="main-slide-img-area main-slide-img1">
                     <a href="#" class="main-slide-text-area">
                         <p class="main-title-small">2022년 제 27회 부산국제영화제</p>
-                        <p class="main-title-big">2차 계약직 직원 수시채용</p>
+                        <h2 class="main-title-big">2차 계약직 직원 수시채용</h2>
                         <p class="main-subtext">
                             원서접수:
                             <br>2022년 5월 25일(수)~
                         </p>
                     </a>
                 </li>
-                <li id="main-slide-img2" class="main-slide-img-area">
+                <li class="main-slide-img-area main-slide-img2">
                     <a href="#" class="main-slide-text-area">
                         <p class="main-title-small">2022년 제 27회 부산국제영화제</p>
-                        <p class="main-title-big">공식상영작(장/단편) 출품 공모</p>
+                        <h2 class="main-title-big">공식상영작(장/단편) 출품 공모</h2>
                         <p class="main-subtext">
                             출품 마감:
                             <br>단편 2022년 6월 22일(수) 18:00
@@ -144,10 +148,10 @@
                         </p>
                     </a>
                 </li>
-                <li id="main-slide-img3" class="main-slide-img-area">
+                <li class="main-slide-img-area main-slide-img3">
                     <a href="#" class="main-slide-text-area">
                         <p class="main-title-small">2022년 새롭게 시작되는</p>
-                        <p class="main-title-big">CHANEL X BIFF 아시아 영화아카데미</p>
+                        <h2 class="main-title-big">CHANEL X BIFF 아시아 영화아카데미</h2>
                         <p class="main-subtext">
                             2022년, 코로나바이러스감염증-19로 인해 일시 중단되었던 부산국제영화제 교육프로그램 아시아영화아카데미가 샤넬과 만나
                             <br>CHANEL X BIFF 아시아영화아카데미 (CHANEL X BIFF ASIAN FILM ACADEMY)로 새롭게 돌아왔습니다.
@@ -164,11 +168,11 @@
                     <img src="img/btn_main_next.png" alt="슬라이드_우버튼">
                 </a>
             </div>
-        </div>
-        <div id="news">
+        </section>
+        <section class="news">
             <div>
                 <div class="notice">
-                    <p>Notice</p>
+                    <h2>Notice</h2>
                     <ul class="notice-list">
                         <li>
                             <div>
@@ -193,8 +197,8 @@
                     </ul>
                 </div>
                 <div class="biff-news">
-                    <p>BIFF News</p>
-                    <ul class="biffnews-list">
+                    <h2>BIFF News</h2>
+                    <ul class="biff-news-list">
                         <li>
                             <div>
                                 <p class="year-and-month">2022-05</p>
@@ -228,288 +232,292 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="introduction">
+        </section>
+        <section class="introduction">
             <ul class="intro-list">
                 <li>
+                    <figure class="intro-img-area"></figure>
                     <div class="intro-text-area">
-                        <p>아시아콘텐츠 & 필름마켓</p>
+                        <h2>아시아콘텐츠 & 필름마켓</h2>
                         <p>영화·영상 콘텐츠 산업 전반을 아우르며 다양하고 풍성한 콘텐츠를 거래할 수 있는 산업의 장</p>
                     </div>
                 </li>
                 <li>
+                    <figure class="intro-img-area"></figure>
                     <div class="intro-text-area">
-                        <p>아시아프로젝트마켓</p>
+                        <h2>아시아프로젝트마켓</h2>
                         <p>전 세계 극영화 프로젝트를 대상으로 하는 아시아 최대의 투자 및 공동제작 마켓.</p>
                     </div>
                 </li>
                 <li>
+                    <figure class="intro-img-area"></figure>
                     <div class="intro-text-area">
-                        <p>커뮤니티비프</p>
+                        <h2>커뮤니티비프</h2>
                         <p>관객이 만드는 영화제 속의 복합 문화 축제</p>
                     </div>
                 </li>
             </ul>
-        </div>
-        <div id="history-slide">
-            <div>
-                <div>
-                    <p>역대 상영작</p>
+        </h2>
+        <h2 class="history-slide">
+            <div class="history-container">
+                <div class="history-title-area">
+                    <h2>역대 상영작</h2>
                     <p>지난 영화제 개요 및 상영작 정보</p>
                 </div>
                 <!-- 1번 옆 : 26 ~ 22 (4개)
                     26번 옆 : 1 ~ 3 (3개) -->
-                <div>
-                    <ul>
+                <div class="history-slide-container">
+                    <ul class="history-slide-list">
                         <li>
                             <a href="#">
-                                <figure><img src="img/3rd_poster.jpg" alt="3회"></figure>
+                                <figure class="history-slide-img"><img src="img/3rd_poster.jpg" alt="3회"></figure>
                             </a>
                             <a href="#">제3회, 1998</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/2nd_poster.jpg" alt="2회"></figure>
+                                <figure class="history-slide-img"><img src="img/2nd_poster.jpg" alt="2회"></figure>
                             </a>
                             <a href="">제2회, 1997</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/1st_poster.jpg" alt="1회"></figure>
+                                <figure class="history-slide-img"><img src="img/1st_poster.jpg" alt="1회"></figure>
                             </a>
                             <a href="#">제1회, 1996</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/26th_poster.jpg" alt="26회"></figure>
+                                <figure class="history-slide-img"><img src="img/26th_poster.jpg" alt="26회"></figure>
                             </a>
                             <a href="#">제26회, 2021</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/25th_poster.jpg" alt="25회"></figure>
+                                <figure class="history-slide-img"><img src="img/25th_poster.jpg" alt="25회"></figure>
                             </a>
                             <a href="#">제25회, 2020</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/24th_poster.jpg" alt="24회"></figure>
+                                <figure class="history-slide-img"><img src="img/24th_poster.jpg" alt="24회"></figure>
                             </a>
                             <a href="#">제24회, 2019</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/23th_poster.jpg" alt="23회"></figure>
+                                <figure class="history-slide-img"><img src="img/23th_poster.jpg" alt="23회"></figure>
                             </a>
                             <a href="#">제23회, 2018</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/22th_poster.jpg" alt="22회"></figure>
+                                <figure class="history-slide-img"><img src="img/22th_poster.jpg" alt="22회"></figure>
                             </a>
                             <a href="#">제22회, 2017</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/21th_poster.jpg" alt="21회"></figure>
+                                <figure class="history-slide-img"><img src="img/21th_poster.jpg" alt="21회"></figure>
                             </a>
                             <a href="#">제21회, 2016</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/20th_poster.jpg" alt="20회"></figure>
+                                <figure class="history-slide-img"><img src="img/20th_poster.jpg" alt="20회"></figure>
                             </a>
                             <a href="#">제20회, 2015</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/19th_poster.jpg" alt="19회"></figure>
+                                <figure class="history-slide-img"><img src="img/19th_poster.jpg" alt="19회"></figure>
                             </a>
                             <a href="#">제19회, 2014</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/18th_poster.jpg" alt="18회"></figure>
+                                <figure class="history-slide-img"><img src="img/18th_poster.jpg" alt="18회"></figure>
                             </a>
                             <a href="#">제18회, 2013</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/17th_poster.jpg" alt="17회"></figure>
+                                <figure class="history-slide-img"><img src="img/17th_poster.jpg" alt="17회"></figure>
                             </a>
-                            <a href="#">제17회, 2012</a>
+                            <a href="#" class="history-slide-img">제17회, 2012</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/16th_poster.jpg" alt="16회"></figure>
+                                <figure class="history-slide-img"><img src="img/16th_poster.jpg" alt="16회"></figure>
                             </a>
                             <a href="#">제16회, 2011</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/15th_poster.jpg" alt="15회"></figure>
+                                <figure class="history-slide-img"><img src="img/15th_poster.jpg" alt="15회"></figure>
                             </a>
                             <a href="#">제15회, 2010</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/14th_poster.jpg" alt="14회"></figure>
+                                <figure class="history-slide-img"><img src="img/14th_poster.jpg" alt="14회"></figure>
                             </a>
                             <a href="#">제14회, 2009</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/13th_poster.jpg" alt="13회"></figure>
+                                <figure class="history-slide-img"><img src="img/13th_poster.jpg" alt="13회"></figure>
                             </a>
                             <a href="#">제13회, 2008</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/12th_poster.jpg" alt="12회"></figure>
+                                <figure class="history-slide-img"><img src="img/12th_poster.jpg" alt="12회"></figure>
                             </a>
                             <a href="#">제12회, 2007</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/11th_poster.jpg" alt="11회"></figure>
+                                <figure class="history-slide-img"><img src="img/11th_poster.jpg" alt="11회"></figure>
                             </a>
                             <a href="#">제11회, 2006</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/10th_poster.jpg" alt="10회"></figure>
+                                <figure class="history-slide-img"><img src="img/10th_poster.jpg" alt="10회"></figure>
                             </a>
                             <a href="#">제10회, 2005</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/9th_poster.jpg" alt="9회"></figure>
+                                <figure class="history-slide-img"><img src="img/9th_poster.jpg" alt="9회"></figure>
                             </a>
                             <a href="#">제9회, 2004</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/8th_poster.jpg" alt="8회"></figure>
+                                <figure class="history-slide-img"><img src="img/8th_poster.jpg" alt="8회"></figure>
                             </a>
                             <a href="#">제8회, 2003</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/7th_poster.jpg" alt="7회"></figure>
+                                <figure class="history-slide-img"><img src="img/7th_poster.jpg" alt="7회"></figure>
                             </a>
                             <a href="#">제7회, 2002</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/6th_poster.jpg" alt="6회"></figure>
+                                <figure class="history-slide-img"><img src="img/6th_poster.jpg" alt="6회"></figure>
                             </a>
                             <a href="#">제6회, 2001</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/5th_poster.jpg" alt="5회"></figure>
+                                <figure class="history-slide-img"><img src="img/5th_poster.jpg" alt="5회"></figure>
                             </a>
                             <a href="#">제5회, 2000</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/4th_poster.jpg" alt="4회"></figure>
+                                <figure class="history-slide-img"><img src="img/4th_poster.jpg" alt="4회"></figure>
                             </a>
                             <a href="#">제4회, 1999</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/3rd_poster.jpg" alt="3회"></figure>
+                                <figure class="history-slide-img"><img src="img/3rd_poster.jpg" alt="3회"></figure>
                             </a>
                             <a href="#">제3회, 1998</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/2nd_poster.jpg" alt="2회"></figure>
+                                <figure class="history-slide-img"><img src="img/2nd_poster.jpg" alt="2회"></figure>
                             </a>
                             <a href="#">제2회, 1997</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/1st_poster.jpg" alt="1회"></figure>
+                                <figure class="history-slide-img"><img src="img/1st_poster.jpg" alt="1회"></figure>
                             </a>
                             <a href="#">제1회, 1996</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/26th_poster.jpg" alt="26회"></figure>
+                                <figure class="history-slide-img"><img src="img/26th_poster.jpg" alt="26회"></figure>
                             </a>
                             <a href="#">제26회, 2021</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/25th_poster.jpg" alt="25회"></figure>
+                                <figure class="history-slide-img"><img src="img/25th_poster.jpg" alt="25회"></figure>
                             </a>
                             <a href="#">제25회, 2020</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/24th_poster.jpg" alt="24회"></figure>
+                                <figure class="history-slide-img"><img src="img/24th_poster.jpg" alt="24회"></figure>
                             </a>
                             <a href="#">제24회, 2019</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/23th_poster.jpg" alt="23회"></figure>
+                                <figure class="history-slide-img"><img src="img/23th_poster.jpg" alt="23회"></figure>
                             </a>
                             <a href="#">제23회, 2018</a>
                         </li>
                         <li>
                             <a href="#">
-                                <figure><img src="img/22th_poster.jpg" alt="22회"></figure>
+                                <figure class="history-slide-img"><img src="img/22th_poster.jpg" alt="22회"></figure>
                             </a>
                             <a href="#">제22회, 2017</a>
                         </li>
                     </ul>
-                    <div>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                    <div class="slide-controller">
+                        <a href="#" class="button-prev"></a>
+                        <a href="#" class="button-next"></a>
                     </div>
                 </div>
-                <a href="#">
+                <a href="#" class="history-search">
                     <span>상영작 통합검색</span>
                 </a>
             </div>
-        </div>
-        <div id="SNS">
-            <div>
-                <p>BIFF SNS</p>
-                <p>Follow us on SNS!</p>
-                <div>
+        </section>
+        <section class="sns">
+            <div class="sns-container">
+                <h2 class="sns-title">BIFF SNS</h2>
+                <p class="sns-subtext">Follow us on SNS!</p>
+                <div class="sns-links-area">
                     <a href="#">
-                        <figure>
+                        <figure class="sns-img">
                             <img src="img/sns_i_facebook.png" alt="facebook_link">
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="sns-img">
                             <img src="img/sns_i_twitter.png" alt="twitter_link">
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="sns-img">
                             <img src="img/sns_i_instagram.png" alt="instagram_link">
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="sns-img">
                             <img src="img/sns_i_youtube.png" alt="youtube_link">
                         </figure>
                     </a>
                 </div>
             </div>
-        </div>
-        <div id="sponsor">
+        </section>
+        <section class="sponsor">
             <ul>
                 <li>
                     <a href="#">
                         <figure>
                             <img src="img/main_7_banner01.jpg" alt="부산광역시">
+                            <h2 class="hidden">부산광역시</h2>
                         </figure>
                     </a>
                 </li>
@@ -517,6 +525,7 @@
                     <a href="#">
                         <figure>
                             <img src="img/main_7_banner02.jpg" alt="문화체육관광부">
+                            <h2 class="hidden">문화체육관광부</h2>
                         </figure>
                     </a>
                 </li>
@@ -524,6 +533,7 @@
                     <a href="#">
                         <figure>
                             <img src="img/main_7_banner03.jpg" alt="영화진흥위원회">
+                            <h2 class="hidden">영화진흥위원회</h2>
                         </figure>
                     </a>
                 </li>
@@ -531,16 +541,17 @@
                     <a href="#">
                         <figure>
                             <img src="img/main_7_banner05.jpg" alt="영화의전당">
+                            <h2 class="hidden">영화의전당</h2>
                         </figure>
                     </a>
                 </li>
             </ul>
-        </div>
+        </section>
     </main>
     <footer>
-        <div>
-            <div>
-                <ul>
+        <div class="footer-container">
+            <div class="footer-nav-area">
+                <ul class="footer-left-nav-list">
                     <li>
                         <a href="#">부서별 연락처</a>
                     </li>
@@ -551,52 +562,52 @@
                         <a href="#">저작권정책</a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="footer-right-nav-list">
                     <li>
                         <a href="#">
-                            <figure>
+                            <figure class="footer-right-nav-img">
                                 <img src="img/btn_sns_facebook.png" alt="facebook_button">
                             </figure>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <figure>
+                            <figure class="footer-right-nav-img">
                                 <img src="img/btn_sns_twitter.png" alt="twitter_button">
                             </figure>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <figure>
+                            <figure class="footer-right-nav-img">
                                 <img src="img/btn_sns_instagram.png" alt="instagram_button">
                             </figure>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <figure>
+                            <figure class="footer-right-nav-img">
                                 <img src="img/btn_sns_youtube.png" alt="youtube_button">
                             </figure>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div>
-                <div>
-                    <span>부산사무국</span>
-                    <span>(48058) 부산광역시 해운대구 수영강변대로 120 영화의전당 비프힐 3층</span>
-                    <a href="#">지도</a>
-                    <span>대표전화 1688-3010</span>
+            <div class="contact">
+                <div class="location-busan">
+                    <span class="place-name">부산사무국</span>
+                    <span class="address">(48058) 부산광역시 해운대구 수영강변대로 120 영화의전당 비프힐 3층</span>
+                    <a href="#" class="map">지도</a>
+                    <span class="tel">대표전화 1688-3010</span>
                 </div>
-                <div>
-                    <span>서울사무소</span>
-                    <span>(03131) 서울특별시 종로구 율곡로 84 가든타워 1601호</span>
-                    <a href="#">지도</a>
-                    <span>전화 02-3675-5097</span>
+                <div class="location-seoul">
+                    <span class="place-name">서울사무소</span>
+                    <span class="address">(03131) 서울특별시 종로구 율곡로 84 가든타워 1601호</span>
+                    <a href="#" class="map">지도</a>
+                    <span class="tel">전화 02-3675-5097</span>
                 </div>
             </div>
-            <p>ⓒ Busan International Film Festival /<a href="#">made by AccessICT</a></p>
+            <p class="copyright">ⓒ Busan International Film Festival /<a href="#">made by AccessICT</a></p>
         </div>
         <a href="#" id="scroll-top"></a>
     </footer>

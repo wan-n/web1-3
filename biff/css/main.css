@@ -2,7 +2,7 @@
     --background-white: #f5f5f5;
     --background-header-red: #d82f36;
     --background-header-dropdown-white: #fff;
-    --background-header-mainnav-white: #fff;
+    --background-header-main-nav-white: #fff;
     --border-header-dropdown-lightgray: #ccc;
     --font-header-dropdown-darkgray: #747474;
     --font-header-dropdown-red: #cd1d1d;
@@ -11,7 +11,9 @@
     --font-header-lightgray: #888;
 }
 
-
+body{
+    font-family: 'Noto Sans KR','돋움',Dotum,'굴림',Gulim, AppleGothic, Sans-serif;
+}
 
 /* header */
 
@@ -37,18 +39,18 @@
 
 .nav-top-logo{
     background-color: var(--background-header-red);
-    padding: 0 22px;
-    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .nav-top-left li{
     margin-right: 20px;
+    font-weight: 300;
 }
 
 .nav-top-logo a{
     line-height: 45px;
     color: var(--font-white);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
 }
 
@@ -136,6 +138,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-main-logo-img{
+    background-image: url(../img/toplogo.png);
+    background-size: 244px 58px;
+    width: 244px;
+    height: 58px;
     
 }
 
@@ -155,11 +164,15 @@
     display: flex;
 }
 
-.nav-main-right a{
+.nav-main-right-list-title{
     font-size: 19px;
     color: var(--font-header-gray);
-    font-weight: 500;
+    font-weight: 400;
     padding: 20px 20px;
+}
+
+.nav-main-right-list a:hover{
+    color: var(--background-header-red);
 }
 
 .nav-dropdown-content{
@@ -167,11 +180,15 @@
     position: absolute;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 
 
 /* main-slide */
 
-#main-slide{
+.main-slide{
     position: relative;
     width: 100%;
     height: 640px;
@@ -179,7 +196,7 @@
 
 }
 
-#main-slide li{
+.main-slide li{
     position: absolute;
     top: 0;
     left: 0;
@@ -203,7 +220,7 @@
     width: 100%;
 }
 
-.main-slide-text-area p{
+.main-slide-text-area{
     color: var(--font-white);
 }
 
@@ -246,16 +263,16 @@
     margin: 0 20px;
 }
 
-#main-slide-img1{
+.main-slide-img1{
     background-image: url(../img/visual_0323.jpg);
     z-index: 1; 
 }
 
-#main-slide-img2{
+.main-slide-img2{
     background-image: url(../img/visual_0323.jpg);
 }
 
-#main-slide-img3{
+.main-slide-img3{
     background-image: url(../img/visual_0512.jpg);
     
 }
