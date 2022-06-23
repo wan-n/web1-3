@@ -6,7 +6,7 @@ const prev = document.querySelector('.prev'); //이전 버튼
 const next = document.querySelector('.next'); //다음 버튼
 const slideImgStyle = document.querySelector('.slides img');  //img선택자
 let slideWidth = window.getComputedStyle(slideImgStyle);   //img 요소의 모든 CSS 속성값을 담은 객체를 불러온다
-let widthValue = slideWidth.getPropertyValue('width').replace('px', '');  //img 요소의 CSS 속성값 중 width값만 반환('px'는 제거)
+let widthValue = slideWidth.getPropertyValue('width').replace('px', '');  //img 요소의 CSS 속성값 중 width 값만 반환('px'는 제거)
 const slideMargin = 0; //슬라이드간의 margin 값
 
 // const btn1 = document.querySelector('.btn1');  //슬라이드 하단 버튼
