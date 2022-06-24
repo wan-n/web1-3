@@ -7,8 +7,13 @@
     --font-header-dropdown-darkgray: #747474;
     --font-header-dropdown-red: #cd1d1d;
     --font-white: #fff;
+    --font-news-gray: #aaa;
+    --font-news-black: #222;
+    --font-news-title-black: #333;
+    --font-news-subtext-gray: #555;
     --font-header-gray: #424242;
     --font-header-lightgray: #888;
+    --font-intro-gray: #666;
 }
 
 body{
@@ -132,7 +137,7 @@ body{
 
 .nav-main{
     margin: 0 auto;
-    max-width: 1295px;
+    max-width: 1325px;
     width: 100%;
     height: 110px;
     display: flex;
@@ -143,9 +148,10 @@ body{
 .nav-main-logo-img{
     background-image: url(../img/toplogo.png);
     background-size: 244px 58px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
     width: 244px;
     height: 58px;
-    
 }
 
 .nav-main h1{
@@ -270,19 +276,203 @@ body{
 
 .main-slide-img2{
     background-image: url(../img/visual_0323.jpg);
+    z-index: 0; 
 }
 
 .main-slide-img3{
     background-image: url(../img/visual_0512.jpg);
-    
+    z-index: 0; 
 }
 
 
 
- 
+/* news */
+.news-container{
+    padding-top: 80px;
+}
+
+.news-wrapper{
+    max-width: 1325px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-left{
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice, .biff-news{
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.news-left h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-news-gray);
+}
+
+.news-list{
+    padding: 10px 0 20px;
+}
+
+.news-list li{
+    padding-top: 30px;
+    display: flex;
+}
+
+.date-area{
+    width: 15%;
+    color: var(--font-news-black);
+    text-align: center;
+}
+
+.news-link-area{
+    width: 85%;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+.year-and-month{
+    font-size: 14px;
+    font-weight: 600;   
+}
+
+.date{
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.title-text{
+    display: block;
+    padding-right: 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--font-news-title-black);
+    font-weight: 500;
+}
+
+.sub-text{
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-top: 15px;
+    color: var(--font-news-subtext-gray);
+}
 
 
 
+
+.news-right{
+    width: 23%;
+}
+
+.recruit-sponsor{
+    position: relative;
+    background-image: url(../img/sponsor_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    word-break: keep-all;
+    color: var(--font-white);
+    padding: 55px 30px 0;
+    box-sizing: border-box;
+}
+
+.link-area{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.recruit-sponsor-title{
+    font-size: 31px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.recruit-sponsor-subtext{
+    line-height: 1.7;
+    font-weight: 300;
+    width: 80%;
+    margin: 10px auto 0;
+}
+
+.recruit-sponsor-more{
+    display: block;
+    margin: 20px auto 0;
+    border: 1px solid var(--font-white);
+    border-radius: 25px;
+    padding: 5px;
+    color: var(--font-white);
+    font-size: 14px;
+    width: 50%;
+}
+
+
+/* intro */
+.introduction{
+    padding: 68px 0;
+}
+
+.intro-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-list li{
+    position: relative;
+    width: 31%;
+}
+
+.intro-img-area{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 252px;
+}
+
+.intro-img-contents-market{
+    background-image: url(../img/family_acfm.jpg);
+}
+
+.intro-img-project-market{
+    background-image: url(../img/family_apm.jpg);
+}
+
+.intro-img-project-community{
+    background-image: url(../img/family_cb.jpg);
+}
+
+.intro-text-area{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.intro-text-area h2{
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.intro-text-area p{
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--font-intro-gray);
+}
 
 
 
