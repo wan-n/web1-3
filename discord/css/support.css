@@ -1,20 +1,10 @@
 :root{
     --font-color-white: #fff;
     --font-color-blue: rgba(88, 101, 242, 1);
-    --font-color-dropdown: #333;
-    --font-color-search: #666;
     --font-color-main: #4f545c;
-    --font-color-guide-gray: #68727e;
     --background-white: #fff;
-    --background-footer: #23272A;
-    --background-dropdown: #f1f1f1;
-    --background-guide-after-gray: #99aab5;
-    --background-item-gray: #f2f2f2;
     --background-blue: #5865f2;
     --footer-green: #3BA55C;
-    --border-dropdown:#d8d8d8;
-    --border-search: #666;
-    --icon-gray: #777;
 }
 
 /* 드롭다운 */
@@ -36,13 +26,13 @@
     position: absolute;
     background-color: var(--background-white);
     min-width: 170px;
-    border: 1px solid var(--border-dropdown);
+    border: 1px solid #d8d8d8;
     border-radius: 3px;
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1);
     z-index: 1;
 }
 .dropdown-content a {
-    color: var(--font-color-dropdown);
+    color: #333;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -51,7 +41,7 @@
     text-decoration: underline;
 }
 .dropdown-content a:hover {
-    background-color: var(--background-dropdown);
+    background-color: #f1f1f1;
     text-decoration: none;
 }
 
@@ -137,7 +127,7 @@ h1{
 .search-container{
     width: 90%;
     height: 40px;
-    border: 1px solid var(--border-search);
+    border: 1px solid #666;
     border-radius: 30px;
     background-color: var(--background-white);
     display: flex;
@@ -148,7 +138,7 @@ h1{
     margin: 0 5%;
 }
 .search-iconb{
-    color: var(--icon-gray);
+    color: #777;
     width: 18px;
     height: 18px;
 }
@@ -161,7 +151,7 @@ h1{
     height: 18px;
     border: none;
     font-size: 14px;
-    color: var(--font-color-search);
+    color: #666;
     background-color: transparent;
 }
 .search-input:focus{
@@ -217,7 +207,7 @@ h1{
 }
 .items p{
     font-size: 14px;
-    color: var(--font-color-guide-gray);
+    color: #68727e;
     padding: 0 25px;
 }
 .items .item-title{
@@ -232,7 +222,7 @@ h1{
     content: '';
     width: 30%;
     height: 1px;
-    background-color: var(--background-guide-after-gray);
+    background-color: #99aab5;
     margin: 10px auto 8px;
     opacity: 0.5;
 }
@@ -273,7 +263,7 @@ h1{
     margin: 50px 0;
 }
 .another li{
-    background-color: var(--background-item-gray);
+    background-color: #f2f2f2;
 }
 .another .items:nth-child(1){
     background-image: url(../img/another-1.svg);
@@ -295,7 +285,7 @@ h1{
 /* footer */
 footer{
     width: 100%;
-    background-color: var(--background-footer);
+    background-color: #23272A;
 }
 
 .download{
