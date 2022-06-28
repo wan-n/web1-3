@@ -874,6 +874,13 @@ footer{
 }
 
 
+@media screen and (max-width: 1240px) {
+    .nav-main-right-list:hover .nav-dropdown-content, 
+    .nav-main-right-list:hover + .dropdown-background{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     /* nav main */
