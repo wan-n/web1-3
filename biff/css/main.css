@@ -132,7 +132,7 @@ body{
 /* nav-main */
 
 .nav-main-container{
-    position: relative;
+    position: relative;   /* dropdown-background 좌표 관리용 */
     background-color: var(--background-header-mainnav-white);
     padding: 26px 0;
 }
@@ -213,41 +213,52 @@ body{
 
 
 /* nav main - dropdown */
-.nav-dropdown-content{
-    display: none;
+.nav-main-right-list li{
+    position: relative;  /* dropdown-content width 관리용 */
+}
+.nav-dropdown-contents{
     position: absolute;
-    top: 86px;
-    padding-top: 46px;
+    width: 100%;
+    padding-top: 70px;
+    overflow: hidden;
+    visibility: hidden;
+    max-height: 0;
+    transform: translateY(-30px);
+    transition: max-height .3s, transform .3s;
 }
 
 .dropdown-background{
     position: absolute;
-    display: none;
     width: 100%;
-    left: 0;
     background-color: var(--background-white);
+    left: 0;
     top: 112px;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    transition: height .3s;
 }
 
-.nav-dropdown-content li a{
+.nav-dropdown-contents li a{
     display: block;
     line-height: 1.6;
     font-size: 14px;
     color: var(--font-gray);
-    padding: 3px 30px 3px 20px;
+    padding: 3px 0 3px 20px;
 }
 
-.nav-main-right-list:hover .nav-dropdown-content, .nav-dropdown-content:hover{
-    display: block;
-    height: auto;
+.nav-main-right-list:hover .nav-dropdown-contents, .nav-dropdown-contents:hover{
+    visibility: visible;
+    max-height: 340px;
+    transform: translateY(0);
     z-index: 10;
 }
 
 .nav-main-right-list:hover + .dropdown-background{
-    display: block;
+    visibility: visible;
     height: 340px;
     z-index: 9;
-    border-top: 1px solid var(--border-gray);    
+    border-top: 1px solid var(--border-gray);   
 }
 
 
@@ -875,7 +886,7 @@ footer{
 
 
 @media screen and (max-width: 1240px) {
-    .nav-main-right-list:hover .nav-dropdown-content, 
+    .nav-main-right-list:hover .nav-dropdown-contents, 
     .nav-main-right-list:hover + .dropdown-background{
         display: none;
     }
@@ -895,7 +906,7 @@ footer{
     .nav-main-container{
         padding: 26px 35px;
     }
-    .nav-dropdown-content{
+    .nav-dropdown-contents{
         display: none;
     }
     .nav-main-logo{
