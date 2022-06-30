@@ -79,7 +79,6 @@ body{
     position: relative;
     margin-left: 10px;
     line-height: 45px;
-    background-color: var(--background-dropdown-gray);
 }
 
 
@@ -133,7 +132,7 @@ body{
 
 .nav-main-container{
     position: relative;   /* dropdown-background 좌표 관리용 */
-    background-color: var(--background-header-mainnav-white);
+    background-color: var(--background-white);
     padding: 26px 0;
     border-bottom: 1px solid var(--border-gray);   
 }
@@ -155,7 +154,7 @@ body{
     position: absolute;
     width: 1px;
     height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
     overflow: hidden;
 }
 
