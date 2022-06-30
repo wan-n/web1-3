@@ -218,17 +218,19 @@ body{
     position: relative;  /* dropdown-content width 관리용 */
 }
 .nav-dropdown-contents{
+    visibility: hidden;
     position: absolute;
     width: 100%;
     padding-top: 70px;
     overflow: hidden;
     max-height: 0;
     transform: translateY(-30px);
-    transition: max-height .3s, transform .3s;
+    transition: max-height .3s, transform .3s, visibility .3s;
     z-index: 10;
 }
 
 .dropdown-background{
+    visibility: hidden;
     position: absolute;
     width: 100%;
     background-color: var(--background-white);
@@ -236,7 +238,7 @@ body{
     top: 113px;
     overflow: hidden;
     height: 0;
-    transition: height .3s;
+    transition: height .3s, visibility .3s;
     z-index: 9;
 }
 
@@ -249,11 +251,13 @@ body{
 }
 
 .nav-main-right-list:hover .nav-dropdown-contents, .nav-dropdown-contents:hover{
+    visibility: visible;
     max-height: 340px;
     transform: translateY(0);
 }
 
 .nav-main-right-list:hover + .dropdown-background{
+    visibility: visible;
     height: 340px;
 }
 
