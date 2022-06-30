@@ -131,10 +131,10 @@ body{
 /* nav-main */
 
 .nav-main-container{
-    position: relative;   /* dropdown-background 좌표 관리용 */
+    position: relative; 
     background-color: var(--background-white);
     padding: 26px 0;
-    border-bottom: 1px solid var(--border-gray);   
+    border-bottom: 1px solid var(--border-gray);  
 }
 
 .nav-main{
@@ -146,19 +146,13 @@ body{
     align-items: center;
 }
 
-.nav-main h1{
-    position: relative;
-}
-
 .hidden {
     position: absolute;
     width: 1px;
     height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
     overflow: hidden;
 }
-
 
 .nav-main-right-list{
     display: flex;
@@ -215,7 +209,7 @@ body{
 
 /* nav main - dropdown */
 .nav-main-right-list li{
-    position: relative;  /* dropdown-content width 관리용 */
+    position: relative;
 }
 .nav-dropdown-contents{
     visibility: hidden;
@@ -235,7 +229,7 @@ body{
     width: 100%;
     background-color: var(--background-white);
     left: 0;
-    top: 113px;
+    top: 112px;
     overflow: hidden;
     height: 0;
     transition: height .3s, visibility .3s;
