@@ -135,6 +135,7 @@ body{
     position: relative;   /* dropdown-background 좌표 관리용 */
     background-color: var(--background-header-mainnav-white);
     padding: 26px 0;
+    border-bottom: 1px solid var(--border-gray);   
 }
 
 .nav-main{
@@ -231,9 +232,8 @@ body{
     position: absolute;
     width: 100%;
     background-color: var(--background-white);
-    border-top: 1px solid var(--border-gray);   
     left: 0;
-    top: 112px;
+    top: 113px;
     overflow: hidden;
     height: 0;
     transition: height .3s;
